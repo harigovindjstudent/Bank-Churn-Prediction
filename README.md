@@ -1,7 +1,7 @@
 # Bank Customer Churn Prediction
 
 ## Project Overview
-This project focuses on predicting customer churn in the banking sector using machine learning techniques. Customer churn, or customer attrition, refers to when customers stop doing business with a bank. By identifying customers who are likely to churn, banks can take proactive measures to retain valuable customers.
+🏦 A machine learning project that predicts customer churn in the banking sector with 84% accuracy. Built using scikit-learn and MLflow, this solution helps banks identify customers at risk of leaving, enabling proactive retention strategies. Features include automated data preprocessing, advanced feature engineering, and comprehensive model experimentation tracking. The project follows industry-standard practices with modular code structure, version control, and detailed documentation.
 
 ## Dataset
 The dataset contains various features about bank customers including:
