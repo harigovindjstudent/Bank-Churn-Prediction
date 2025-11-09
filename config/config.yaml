@@ -1,0 +1,47 @@
+data:
+  raw_data_path: 'data/Churn_Modelling.csv'
+  processed_data_path: 'data/processed/processed_data.csv'
+  test_size: 0.2
+  random_state: 42
+
+feature_engineering:
+  categorical_features:
+    - 'Geography'
+    - 'Gender'
+  numerical_features:
+    - 'CreditScore'
+    - 'Age'
+    - 'Tenure'
+    - 'Balance'
+    - 'NumOfProducts'
+    - 'HasCrCard'
+    - 'IsActiveMember'
+    - 'EstimatedSalary'
+  target: 'Exited'
+
+model:
+  algorithms:
+    - name: 'logistic_regression'
+      params:
+        C: 1.0
+        max_iter: 1000
+    - name: 'random_forest'
+      params:
+        n_estimators: 100
+        max_depth: 10
+        min_samples_split: 2
+    - name: 'xgboost'
+      params:
+        n_estimators: 100
+        max_depth: 6
+        learning_rate: 0.1
+
+  best_model_path: 'models/best_model.pkl'
+
+metrics:
+  track:
+    - 'accuracy'
+    - 'precision'
+    - 'recall'
+    - 'f1'
+    - 'roc_auc'
