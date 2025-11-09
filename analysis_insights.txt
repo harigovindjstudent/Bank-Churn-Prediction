@@ -1,0 +1,95 @@
+CUSTOMER CHURN ANALYSIS - INSIGHTS AND RECOMMENDATIONS
+
+1. DATASET OVERVIEW
+------------------
+- Total Records: 10,000 customers
+- Features: 14 columns (including target variable 'Exited')
+- No missing values in the dataset
+- Mix of numerical and categorical features
+
+2. CHURN DISTRIBUTION
+--------------------
+- Churned customers: 20.37%
+- Non-churned customers: 79.63%
+INSIGHT: Significant class imbalance present
+
+3. CORRELATION ANALYSIS
+----------------------
+Strong Correlations:
+a) Age vs Churn (0.29): Positive correlation
+   - Older customers are more likely to churn
+b) IsActiveMember vs Churn (-0.16): Negative correlation
+   - Active members are less likely to churn
+c) Balance vs NumOfProducts (-0.30): Negative correlation
+   - Customers with more products tend to have lower balances
+
+4. KEY FEATURES
+--------------
+Numerical Features:
+- CreditScore (350-850)
+- Age (18-92)
+- Tenure (0-10)
+- Balance (0-250,898)
+- NumOfProducts (1-4)
+- EstimatedSalary
+
+Categorical Features:
+- Geography (France, Spain, Germany)
+- Gender (Male, Female)
+- HasCrCard (0,1)
+- IsActiveMember (0,1)
+
+RECOMMENDED APPROACH
+------------------
+1. Data Preprocessing:
+   - Handle class imbalance using SMOTE or class weights
+   - Scale numerical features (especially Balance and EstimatedSalary)
+   - Encode categorical variables (Geography and Gender)
+   Reason: Ensure model isn't biased by imbalanced classes or feature scales
+
+2. Feature Engineering:
+   a) Create age groups/bins
+      Reason: Strong correlation with churn suggests age segments might have different behaviors
+   
+   b) Create interaction features:
+      - Age × Balance
+      - Tenure × NumOfProducts
+      - IsActiveMember × Age
+      Reason: Capture complex relationships between correlated features
+
+   c) Create ratio features:
+      - Balance/EstimatedSalary
+      - Balance/Age
+      Reason: Derive meaningful financial indicators
+
+3. Model Selection Strategy:
+   a) Start with interpretable models:
+      - Logistic Regression
+      - Decision Trees
+      Reason: Understanding feature importance and business rules
+
+   b) Then try advanced models:
+      - Random Forest
+      - XGBoost
+      Reason: Better handling of non-linear relationships and feature interactions
+
+4. Evaluation Focus:
+   - Use precision-recall metrics over accuracy
+   - Focus on recall for churned customers
+   Reason: Cost of missing a potential churner is higher than falsely identifying a non-churner
+
+5. Business Recommendations:
+   a) Age-based retention strategies
+   b) Active membership benefits
+   c) Product portfolio optimization
+   Reason: Align with strongest correlating factors
+
+PRIORITY AREAS FOR INVESTIGATION
+------------------------------
+1. Age-related churn patterns
+2. Active membership impact
+3. Product-balance relationship
+4. Geographic differences in churn
+5. Customer tenure patterns
+
+Note: Keep the level 2 project structure in mind - ensure proper modularization, version control, and experiment tracking throughout the implementation.
