@@ -1,35 +1,55 @@
-# E-commerce Customer Churn Prediction
+# Bank Customer Churn Prediction
 
-This project aims to predict customer churn in an e-commerce context using the Olist E-commerce public dataset. The project implements machine learning techniques to identify customers who are likely to churn, helping businesses take proactive retention measures.
-
-## Project Structure
-
-```
-customer_churn_prediction/
-├── data/                      # Data directory
-├── src/                      # Source code
-├── notebooks/                # Jupyter notebooks
-├── config/                   # Configuration files
-└── tests/                   # Unit tests
-```
+## Project Overview
+This project focuses on predicting customer churn in the banking sector using machine learning techniques. Customer churn, or customer attrition, refers to when customers stop doing business with a bank. By identifying customers who are likely to churn, banks can take proactive measures to retain valuable customers.
 
 ## Dataset
+The dataset contains various features about bank customers including:
+- Demographic information (age, gender, geography)
+- Banking relationship attributes (credit score, tenure, balance)
+- Product usage (number of products, credit card status, active member status)
+- Financial metrics (estimated salary)
+- Target variable: 'Exited' (whether the customer has churned or not)
 
-The project uses the Olist E-commerce public dataset from Kaggle, which includes:
-- Customer data
-- Order information
-- Product details
-- Payment information
-- Review data
+## Project Structure
+```
+├── data/               # Dataset files
+├── notebooks/         
+│   └── 02_churn_eda.ipynb  # Exploratory Data Analysis
+├── analysis_insights.txt    # Documented insights and findings
+└── README.md          # Project documentation
+```
 
-## Setup
+## Analysis Highlights
+- Comprehensive exploratory data analysis
+- Feature correlation analysis
+- Distribution analysis of key variables
+- Target class distribution visualization
+- Skewness analysis of numerical features
 
-[Setup instructions will be added]
+## Tools & Technologies
+- Python
+- Pandas for data manipulation
+- Matplotlib & Seaborn for visualization
+- Jupyter Notebooks for interactive development
 
-## Usage
+## Current Progress
+- Completed initial data exploration
+- Analyzed feature distributions and correlations
+- Identified key patterns in customer behavior
+- Documented insights for feature engineering
 
-[Usage instructions will be added]
+## Next Steps
+1. Feature engineering based on insights
+2. Data preprocessing and scaling
+3. Model development and training
+4. Model evaluation and optimization
+5. Results interpretation and recommendations
 
-## License
-
-[License information will be added]
+## Business Value
+This project aims to help banks:
+- Identify customers at risk of churning
+- Understand factors contributing to customer churn
+- Develop targeted retention strategies
+- Reduce customer attrition rates
+- Improve customer satisfaction and loyalty
