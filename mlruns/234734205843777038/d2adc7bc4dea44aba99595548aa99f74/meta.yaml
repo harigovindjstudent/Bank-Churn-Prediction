@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Hari%20Is%20Bored/Customer%20Churn%20Prediction/mlruns/234734205843777038/d2adc7bc4dea44aba99595548aa99f74/artifacts
+end_time: 1762854630740
+entry_point_name: ''
+experiment_id: '234734205843777038'
+lifecycle_stage: active
+run_id: d2adc7bc4dea44aba99595548aa99f74
+run_name: caring-panda-502
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762854630050
+status: 3
+tags: []
+user_id: harig
