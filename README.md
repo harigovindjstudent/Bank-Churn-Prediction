@@ -13,11 +13,26 @@ The dataset contains various features about bank customers including:
 
 ## Project Structure
 ```
-├── data/               # Dataset files
-├── notebooks/         
-│   └── 02_churn_eda.ipynb  # Exploratory Data Analysis
-├── analysis_insights.txt    # Documented insights and findings
-└── README.md          # Project documentation
+├── config/                      # Configuration files
+│   └── config.yaml             # Model and feature configuration
+├── data/                        # Dataset files
+│   └── Churn_Modelling.csv     # Raw customer data
+├── models/                      # Saved model files
+│   └── best_model.pkl          # Trained model
+├── notebooks/                   # Jupyter notebooks
+│   └── 02_churn_eda.ipynb      # Exploratory Data Analysis
+├── src/                         # Source code
+│   ├── data/                   # Data loading modules
+│   │   └── data_loader.py      # Data loading and splitting
+│   ├── features/               # Feature engineering modules
+│   │   └── feature_engineering.py  # Feature creation and preprocessing
+│   ├── models/                 # Model training modules
+│   │   └── model_trainer.py    # Model training and evaluation
+│   ├── utils/                  # Utility functions
+│   └── main.py                 # Main execution script
+├── analysis_insights.txt        # Documented insights and findings
+├── README.md                    # Project documentation
+└── requirements.txt             # Python dependencies
 ```
 
 ## Analysis Highlights
