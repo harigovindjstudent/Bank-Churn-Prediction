@@ -1,8 +1,9 @@
 artifact_uri: file:///D:/Hari%20Is%20Bored/Customer%20Churn%20Prediction/mlruns/234734205843777038/d2adc7bc4dea44aba99595548aa99f74/artifacts
+deleted_time: 1765000026067
 end_time: 1762854630740
 entry_point_name: ''
 experiment_id: '234734205843777038'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: d2adc7bc4dea44aba99595548aa99f74
 run_name: caring-panda-502
 source_name: ''

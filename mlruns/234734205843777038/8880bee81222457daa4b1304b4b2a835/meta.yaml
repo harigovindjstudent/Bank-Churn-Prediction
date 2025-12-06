@@ -1,8 +1,9 @@
 artifact_uri: file:///D:/Hari%20Is%20Bored/Customer%20Churn%20Prediction/mlruns/234734205843777038/8880bee81222457daa4b1304b4b2a835/artifacts
+deleted_time: 1765000026064
 end_time: 1762854632278
 entry_point_name: ''
 experiment_id: '234734205843777038'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 8880bee81222457daa4b1304b4b2a835
 run_name: clean-dog-696
 source_name: ''

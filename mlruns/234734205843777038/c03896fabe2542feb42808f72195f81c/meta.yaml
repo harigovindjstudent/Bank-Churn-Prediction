@@ -1,8 +1,9 @@
 artifact_uri: file:///D:/Hari%20Is%20Bored/Customer%20Churn%20Prediction/mlruns/234734205843777038/c03896fabe2542feb42808f72195f81c/artifacts
+deleted_time: 1765000026067
 end_time: 1762854630050
 entry_point_name: ''
 experiment_id: '234734205843777038'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: c03896fabe2542feb42808f72195f81c
 run_name: puzzled-doe-339
 source_name: ''

@@ -26,7 +26,7 @@ class ModelTrainer:
             best_model = None
             
             for algorithm in self.config['model']['algorithms']:
-                with mlflow.start_run(nested=True):
+                with mlflow.start_run(run_name=algorithm['name'], nested=True):
                     model = self._get_model(algorithm)
                     model.fit(X_train, y_train)
                     
